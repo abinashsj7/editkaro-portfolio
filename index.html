@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Editkaro — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="brand">
+    <div class="logo">E</div>
+    <div>
+      <h1>Editkaro.in — Portfolio</h1>
+      <p class="lead">Video editing • Color grading • Ads • Short films — showcase reel</p>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="short">Short Videos</button>
+    <button class="filter-btn" data-filter="long">Long Form</button>
+    <button class="filter-btn" data-filter="gaming">Gaming</button>
+    <button class="filter-btn" data-filter="ads">Ads</button>
+    <button class="filter-btn" data-filter="color">Color Grading</button>
+    <button class="filter-btn" data-filter="anime">Anime</button>
+    <button class="filter-btn" data-filter="doc">Documentary</button>
+  </div>
+
+  <section class="grid" id="grid">
+
+    <article class="card" data-cat="short ads" data-video="https://www.youtube.com/embed/5qap5aO4i9A" data-title="Promo Ad — Product X">
+      <a class="thumb" href="#"><img src="https://i.ytimg.com/vi/5qap5aO4i9A/hqdefault.jpg"><div class="play-icon">▶</div></a>
+      <div class="meta"><div class="title">Promo Ad — Product X</div><div class="small">00:45 • ProductX</div></div>
+    </article>
+
+    <article class="card" data-cat="long color doc" data-video="https://www.youtube.com/embed/3JZ_D3ELwOQ" data-title="Documentary Teaser">
+      <a class="thumb" href="#"><img src="https://i.ytimg.com/vi/3JZ_D3ELwOQ/hqdefault.jpg"><div class="play-icon">▶</div></a>
+      <div class="meta"><div class="title">Documentary Teaser</div><div class="small">03:12 • A. Kumar</div></div>
+    </article>
+
+    <article class="card" data-cat="gaming short" data-video="https://www.youtube.com/embed/2Vv-BfVoq4g" data-title="Gaming Montage #1">
+      <a class="thumb" href="#"><img src="https://i.ytimg.com/vi/2Vv-BfVoq4g/hqdefault.jpg"><div class="play-icon">▶</div></a>
+      <div class="meta"><div class="title">Gaming Montage #1</div><div class="small">02:02 • YouTube</div></div>
+    </article>
+
+    <article class="card" data-cat="ads color" data-video="https://www.youtube.com/embed/o1tj2zJ2Wvg" data-title="E-commerce Ad">
+      <a class="thumb" href="#"><img src="https://i.ytimg.com/vi/o1tj2zJ2Wvg/hqdefault.jpg"><div class="play-icon">▶</div></a>
+      <div class="meta"><div class="title">E-commerce Ad (Cinematic)</div><div class="small">01:05 • ShopMart</div></div>
+    </article>
+
+    <article class="card" data-cat="anime short" data-video="https://www.youtube.com/embed/LsoLEjrDogU" data-title="Anime Edit — Fan Trailer">
+      <a class="thumb" href="#"><img src="https://i.ytimg.com/vi/LsoLEjrDogU/hqdefault.jpg"><div class="play-icon">▶</div></a>
+      <div class="meta"><div class="title">Anime Edit — Fan Trailer</div><div class="small">01:22 • Anime</div></div>
+    </article>
+
+    <article class="card" data-cat="long color" data-video="https://www.youtube.com/embed/keVZfD6Y3wA" data-title="Color Grading Reel">
+      <a class="thumb" href="#"><img src="https://i.ytimg.com/vi/keVZfD6Y3wA/hqdefault.jpg"><div class="play-icon">▶</div></a>
+      <div class="meta"><div class="title">Color Grading Reel</div><div class="small">04:05 • Demo Reel</div></div>
+    </article>
+
+  </section>
+
+</main>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-inner">
+    <div class="modal-header">
+      <div id="modalTitle" class="modal-title">Preview</div>
+      <button id="closeModal" class="close-btn">✕</button>
+    </div>
+    <div class="modal-body"><div class="video-wrap" id="videoWrap"></div></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
 
